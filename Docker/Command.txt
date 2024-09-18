@@ -1,0 +1,28 @@
+docker ps --all เรียกทัั้งหมด  
+docker ps เรียกบางส่วน
+docker run hello-world
+docker -v โชว์ verion
+docker run busybox echo 'hello world in docker!' ใช้สร้าง docker ตัวใหม่ขึ้นมา
+docker run busybox ping google.com ปิงไปหา google
+docker stop fc59e6728eb1 อยู่การทำงาน ของ docker
+docker pull busybox 
+docker create busybox ping google.com
+docker start e82676d4454f 
+docker start-a e82676d4454f 
+docker rm ลบบางส่วน
+docker system prune ลบทั้งหมด
+docker run nginx เปิดการืทำงานของ nginx
+docker exec b1a97549ae42 
+docker exec -it b1a97549ae42 sh
+docker exec -it b1a97549ae42 bash
+docker run  -p 80:80 nginx
+docker run -p 9000:80 nginx
+http://localhost:9000/
+docker run -d -p  4000:80 nginx 
+docker run --name bung  -d -p  3000:80 nginx
+docker logs 2b12da5e569089579adf9f58324f68d58f3850660f53fcabdc112464daedbe62
+docker logs -f 2b12da5e569089579adf9f58324f68d58f3850660f53fcabdc112464daedbe62
+docker system df
+docker images
+docker image inspect nginx ดูโครงสร้างของข้อมูล
+docker image rm ลบบางส่วน
